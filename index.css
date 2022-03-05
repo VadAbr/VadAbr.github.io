@@ -2,6 +2,33 @@ body {
     background: #323A4A;
 }
 
+h1, h2, h3, h4, legend {
+    font-size: 1.5rem;
+    color: white;
+}
+
+label {
+    font-size: 1rem;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+fieldset {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+input[type=number] {
+    width: 60px;
+}
+
+input:disabled {
+    cursor: not-allowed;
+}
+
 .card {
     display: flex;
     flex-direction: column;

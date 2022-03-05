@@ -1,0 +1,44 @@
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Абрамов В.С.</title>
+    <link href="index.css" rel="stylesheet">
+    <script src="task3.js"></script>
+</head>
+<body>
+<div class="card">
+    <h4>Solaire</h4>
+
+    <div>
+        <fieldset>
+            <legend>1 уравнение</legend>
+            <input id="n1" type="number"/><label for="n1">X + </label>
+            <input id="n2" type="number"/><label for="n2">Y = </label>
+            <input id="n3" type="number"/>
+        </fieldset>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>2 уравнение</legend>
+            <input id="n4" type="number"/><label for="n4">X + </label>
+            <input id="n5" type="number"/><label for="n5">Y = </label>
+            <input id="n6" type="number"/>
+        </fieldset>
+    </div>
+
+    <div class="card-buttons">
+        <button class="card-button" onclick="calculate()">Вычислить</button>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>Корни</legend>
+            <label for="result1">X = </label><input id="result1" type="number" disabled/>
+            <label for="result2">Y = </label><input id="result2" type="number" disabled/>
+        </fieldset>
+    </div>
+</div>
+</body>
+</html>
