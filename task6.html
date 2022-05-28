@@ -1,0 +1,25 @@
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Абрамов В.С.</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+<div class="code-example">
+    <p> Дан код деструктуризации в существующую переменную, который выдаёт синтаксическую ошибку:
+        <br/>
+        <br/>
+        let a; { a } = { a: 5 }; console.log(a);
+        <br/>
+        <br/>
+        Вам нужно исправить его, добавив к нему два символа. Это единственное исправление, которое нужно сделать. После
+        исправления вывод в консоль даст значение 5.
+    </p>
+
+    <pre>
+    <code>let a; ({ a } = { a: 5 }); console.log(a);</code>
+    </pre>
+</div>
+</body>
+</html>

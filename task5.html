@@ -1,0 +1,35 @@
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Абрамов В.С.</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+<div class="code-example">
+    <p>(0021) Предоставьте код функции task от одного аргумента x, которая возвращает промис, отвергающий с причиной
+        'no' если x >= 18, разрешённый в значение yes, если x < 18, либо в значение, равное вашему логину в систему,
+        если x == 0.</p>
+    <pre>
+    <code>
+        function task(x) {
+          return new Promise(function(resolve, reject) {
+            if(x === 0){
+              resolve("solaire");
+            }
+
+            if(x >= 18) {
+              reject("no");
+            }
+
+            if(x < 18){
+              resolve("yes");
+            }
+          });
+        }
+    </code>
+</pre>
+</div>
+
+</body>
+</html>

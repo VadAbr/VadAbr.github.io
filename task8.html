@@ -1,0 +1,30 @@
+<html lang="ru">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Абрамов В.С.</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+<div class="code-example">
+    <p>Использйте метод fetch для доступа к ресурсу по адресу https://kodaktor.ru/j/users
+        <br/>
+        Разложите последовательные преобразования (извлечение ключа users с помощью деструктуризации объекта, извлечение
+        третьего по счёту от нуля элемента массива с помощью деструктуризации и извлечение ключа login с помощью
+        деструктуризации) на элементарные действия, выполняемые в отдельных вызовах метода then. Вы должны получить
+        ego@yandex.ru в конце.
+    </p>
+
+    <pre>
+    <code>fetch("/j/users")
+      .then(x => x.json())
+      .then(({users: x}) => x)
+      .then(({3: x}) => x)
+      .then(({login: x}) => x)
+      .then(x => Out.log(x))</code>
+    </pre>
+
+    <a target="_blank" href="https://kodaktor.ru/__a4340">kodaktor</a>
+</div>
+</body>
+</html>
