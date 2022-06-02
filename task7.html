@@ -13,7 +13,11 @@
     </p>
 
     <pre>
-    <code>let a; ({ a } = { a: 5 }); console.log(a);</code>
+    <code>
+async function task(x) {
+  const { name } = await x;
+  return Promise.resolve(await name + "solaire");
+}</code>
     </pre>
 </div>
 </body>
